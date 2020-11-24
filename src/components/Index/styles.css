@@ -1,0 +1,18 @@
+main {
+    margin: 20px;
+}
+#pgInicial {
+    background-color: rgba(0, 154, 204, 0.2);
+    margin: 0px;
+    padding: 20px;
+    background-image: url("../imagens/equipamentos-descontos.png");
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-blend-mode: hue;
+}
+#bemVindo {
+    padding: 60px;
+    font-size: 20px;
+    text-align: left;
+}
