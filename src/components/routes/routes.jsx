@@ -4,17 +4,21 @@ import {Switch, Route} from 'react-router-dom';
 import Index from '../Index';
 import Products from '../Products';
 import OurStores from '../Our-stores';
-import Contact from '../Contact';                              
+import Contact from '../Contact';
+import Menu from '../Menu';
                 
 const Routes = () => {
     return(
-        <Switch>
-            <Route path="/" component={Index} exact />
-            <Route path="/Produtos" component={Products}/>
-            <Route path="/Nossaslojas" component={OurStores}/>
-            <Route path="/Contatos" component={Contact}/>
-            <Route component={() => <div>Page Error 404!</div>}/>
-        </Switch>
+        <>
+                <Menu/>
+                <Switch>
+                    <Route path="/" component={Index} exact />
+                    <Route path="/Produtos" component={Products}/>
+                    <Route path="/Nossaslojas" component={OurStores}/>
+                    <Route path="/Contatos" component={Contact}/>
+                    <Route component={() => <div>Page Error 404!</div>}/>
+                </Switch>
+        </>
         );
 }  
 

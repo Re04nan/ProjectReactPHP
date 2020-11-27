@@ -1,12 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';  
+
 
 import './styles.css';
-import logo from '../imagens/logo.png';
+import logo from '../imagens/logo.png';   
 
 const Menu = () => {
     return (
-            <nav>
+        <nav>
                 <ul class="nav nav-justified align-items-sm-center pb-2">
                     <li class="nav-item">
                         <Link class="nav-link active" to="/">
@@ -24,13 +25,8 @@ const Menu = () => {
                         <Link class="nav-link flex-fill" to="/Contatos">Contato</Link>
                     </li>
                 </ul>
-            </nav>
+        </nav>
     );
 }
 
 export default Menu;
-
-
-                
-                
-                

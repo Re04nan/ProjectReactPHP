@@ -1,5 +1,5 @@
 //Clone
-function copiar(pegou) {
+export function copiar(pegou) {
     let btnConf = document.getElementsByClassName("btnComprar");
     let cont = 0, i = 0;
 
@@ -20,7 +20,7 @@ function copiar(pegou) {
     }
 }
 
-function exibirZoom(imagem) {
+export function exibirZoom(imagem) {
     let tamanho = document.getElementsByClassName("imgProduto");
     // Laço de repetição para varrer o Array de Objetos class imgProduto
     for (let i = 0; i <= tamanho.length; i++) {
@@ -53,41 +53,27 @@ function exibirZoom(imagem) {
         }
     }
 }
-function filtroCategoria(categoria) {
+export function filtroCategoria(event) {
     let elementos = document.getElementsByClassName("secProdutos");
 
     for (let i = 0; i <= elementos.length; i++) {
         //console.log(elementos[i].id)
-        if (categoria == elementos[i].id) {
+        if (event == elementos[i].id) {
             elementos[i].style = "display:inline-block";
         } else {
             elementos[i].style = "display:none";
         }
     }
 }
-filtrarTodos = () => {
+export function filtrarTodos() {
     let elementos = document.getElementsByClassName("secProdutos");
 
     for (let i = 0; i <= elementos.length; i++) {
         elementos[i].style = "display:inline-block";
     }
 }
-// efeito mouse
-efeitoTela = (selecionado) => {
-    let lista = document.getElementsByClassName("lista");
-    let i = 0;
-
-    while (i <= lista.length) {
-        if (lista[i].id == selecionado.id) {
-            lista[i].style = "background-color: black; padding: 8px; border-radius: 20px";
-        } else {
-            lista[i].style = "background-color: none;";
-        }
-        i++;
-    }
-}
 // limpar
-limpar = () => {
+export function limpar(){
     let lista = document.getElementsByClassName("lista");
     let i = 0;
 

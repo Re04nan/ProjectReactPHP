@@ -1,6 +1,8 @@
 import React from 'react';
 
-import 'styles.css';
+import './styles.css';
+import email from '../imagens/email.png';
+import whatsapp from '../imagens/whatsapp.png';
 
 const Contact = () => {
     return(
@@ -13,11 +15,11 @@ const Contact = () => {
 		<section id="secContatos">
 			<div class="divContatos container">
 				<figure>
-					<img class="iconeRS" src="./imagens/email.png" alt="Endereço de Mensagem" title="Ícone de envelope"/>
+					<img class="iconeRS" src={email} alt="Endereço de Mensagem" title="Ícone de envelope"/>
 					<b>contato@fullstackeletro.com</b>
 				</figure>
 				<figure>
-					<img class="iconeRS" src="./imagens/whatsapp.png" alt="Whatsapp" title="Ícone de Whatsapp"/>
+					<img class="iconeRS" src={whatsapp} alt="Whatsapp" title="Ícone de Whatsapp"/>
 					<b>(11) 9999-9999</b>
 				</figure>
 			</div>

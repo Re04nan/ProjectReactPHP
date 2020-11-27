@@ -1,13 +1,11 @@
 import React from 'react';
-import {BrowserRouter} from "react-router-dom";
-import Menu from '../Menu';
+import { BrowserRouter } from "react-router-dom";
 import Footer from '../Footer';
-import Routes from '../routes';
+import Routes from '../routes/routes';
 
 const App = () => {
     return (
         <>
-            <Menu/>
             <BrowserRouter>
                 <Routes/>
             </BrowserRouter>
