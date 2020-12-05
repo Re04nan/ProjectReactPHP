@@ -23,17 +23,18 @@ const Index = () => {
                     <p>para mais informações acesse a aba contato na parte superior </p>
                     <p>do menu e mande sua pergunta que responderemos assim que possível, <b>boas compras.</b></p>
                 </div>
+                <br/>
+                <h2>TOP 3 - Mais vendidos</h2>
                 <article>
                     {bestsellers.map(item => {
-                        
-                            <div key={item.id_produto} className="card" style="width: 18rem;">
-                                    <img className="card-img-top" src={require(`.././imagens/Produtos${item.nome_imagem}`).default} alt={item.produtos}/>
-                                <div className="card-body">
-                                    <p className="card-text">{item.produtos}</p>
-                                    <p className="card-text-danger">{item.quantidade}</p>
+                        return(
+                            <div key={item.id_produto} className="sold">
+                                    <img className="" src={require(`.././imagens/Produtos${item.nome_imagem}`).default} alt={item.produtos}/>
+                                <div className="">
+                                    <p className="text-white bg-danger font-weight-bold text-uppercase">{item.produtos} ({item.vendidos})</p>
                                 </div>
                             </div>
-                        
+                        )
                     })}
                 </article>
             </main>
