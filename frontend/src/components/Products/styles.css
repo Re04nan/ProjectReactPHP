@@ -3,25 +3,13 @@
     display: inline-block;
     font-size: 16px;
     padding-bottom: 40px;
+    margin-left: 20px;
 }
 .secProdutos {
     width: 20%;
     text-align: center;
     display: inline-block;
     margin: 10px;
-}
-.lista {
-    list-style-type: none;
-}
-#categorias {
-    width: 20%;
-    text-align: left;
-    float: left;
-    cursor: pointer;
-    color: #0099cc;
-}
-#categorias h3 {
-    color: black;
 }
 .imgProduto {
     width: 120px;

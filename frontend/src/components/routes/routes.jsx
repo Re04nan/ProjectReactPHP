@@ -6,6 +6,7 @@ import Products from '../Products';
 import OurStores from '../Our-stores';
 import Contact from '../Contact';
 import Menu from '../Menu';
+import Order from '../Order';
                 
 const Routes = () => {
     return(
@@ -16,6 +17,7 @@ const Routes = () => {
                     <Route path="/Produtos" component={Products}/>
                     <Route path="/Nossaslojas" component={OurStores}/>
                     <Route path="/Contatos" component={Contact}/>
+                    <Route path="/Pedido/:id/" component={Order}/>
                     <Route component={() => <div>Page Error 404!</div>}/>
                 </Switch>
         </>
